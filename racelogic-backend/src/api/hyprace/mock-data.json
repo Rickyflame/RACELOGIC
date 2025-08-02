@@ -1,0 +1,14 @@
+[
+  {
+    "id": "abc123",
+    "driver": "Max Verstappen",
+    "position": 1,
+    "time": "1:24.543"
+  },
+  {
+    "id": "def456",
+    "driver": "Charles Leclerc",
+    "position": 2,
+    "time": "1:24.711"
+  }
+]
