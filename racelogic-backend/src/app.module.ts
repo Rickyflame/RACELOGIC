@@ -8,6 +8,7 @@ import { CronService } from './jobs/cron/cron.service';
 import { HypraceService } from './api/hyprace/hyprace.service';
 import { HypraceModule } from './api/hyprace/hyprace.module';
 import { PrismaModule } from './prisma/prisma.module';
+import { F1Module } from './f1/f1.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { PrismaModule } from './prisma/prisma.module';
     }),
     HypraceModule,
     PrismaModule,
+    F1Module,
   ],
   controllers: [AppController, HealthController],
   providers: [AppService, CronService, HypraceService],
