@@ -9,6 +9,8 @@ import { HypraceService } from './api/hyprace/hyprace.service';
 import { HypraceModule } from './api/hyprace/hyprace.module';
 import { PrismaModule } from './prisma/prisma.module';
 import { F1Module } from './f1/f1.module';
+import { RaceModule } from './race/race.module';
+import { PrismaService } from './prisma/prisma.service';
 
 @Module({
   imports: [
@@ -19,8 +21,9 @@ import { F1Module } from './f1/f1.module';
     HypraceModule,
     PrismaModule,
     F1Module,
+    RaceModule,
   ],
   controllers: [AppController, HealthController],
-  providers: [AppService, CronService, HypraceService],
+  providers: [AppService, CronService, HypraceService, PrismaService],
 })
 export class AppModule {}

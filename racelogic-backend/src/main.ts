@@ -33,7 +33,6 @@ async function bootstrap() {
   logger.log(`RACELOGIC Backend is running on: http://localhost:${port}`);
   logger.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
   logger.log(`Database: ${process.env.DB_NAME || 'not configured'}`);
-  await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap().catch((error) => {
   const logger = new Logger('Bootstrap');

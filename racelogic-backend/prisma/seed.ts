@@ -10,12 +10,12 @@ async function main(): Promise<void> {
     const sport = await prisma.sport.create({
       data: { name: 'F1' },
     });
-    
+
     // Create Mercedes team
     const team = await prisma.team.create({
-      data: { 
-        name: 'Mercedes', 
-        sportId: sport.id 
+      data: {
+        name: 'Mercedes',
+        sportId: sport.id,
       },
     });
 
@@ -89,3 +89,5 @@ void main()
   .finally(async () => {
     await prisma.$disconnect();
   });
+
+
