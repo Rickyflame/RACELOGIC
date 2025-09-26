@@ -1,0 +1,19 @@
+{
+  "name": "racelogic-monorepo",
+  "version": "0.0.1",
+  "description": "Monorepo for RACELOGIC frontend and backend",
+  "scripts": {
+    "dev": "pnpm --parallel --filter './apps/*' dev",
+    "dev:frontend": "pnpm --filter @racelogic/frontend dev",
+    "dev:backend": "pnpm --filter @racelogic/backend start:dev",
+    "build": "pnpm --filter './apps/*' build",
+    "build:frontend": "pnpm --filter @racelogic/frontend build",
+    "build:backend": "pnpm --filter @racelogic/backend build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

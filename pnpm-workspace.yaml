@@ -4,3 +4,6 @@ packages:
 
 ignoredBuiltDependencies:
   - '@nestjs/core'
+  - '@tailwindcss/oxide'
+  - sharp
+  - unrs-resolver
